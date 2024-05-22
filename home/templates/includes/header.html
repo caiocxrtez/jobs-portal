@@ -1,0 +1,103 @@
+    {% load static %}
+
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="text-center">
+                    <img src="{% static 'assets/imgs/theme/loading.gif' %}" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header sticky-bar">
+        <div class="container">
+            <div class="main-header">
+                <div class="header-left">
+                    <div class="header-logo">
+                        <a href="#" class="d-flex"><img alt="" src="{% static 'assets/imgs/theme/logo.svg' %}" /></a>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="nav-main-menu d-none d-xl-block">
+                            <ul class="main-menu">
+                                <li class="">
+                                    <a class="active" href="#">Início</a>
+                                </li>
+                                <li class="has-children">
+                                    <a href="#">Páginas</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Página</a></li>
+                                        <li><a href="#">Página</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="burger-icon burger-icon-white">
+                            <span class="burger-icon-top"></span>
+                            <span class="burger-icon-mid"></span>
+                            <span class="burger-icon-bottom"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="block-signin">
+                        <a href="#" class="text-link-bd-btom hover-up">Criar conta</a>
+                        <a href="#" class="btn btn-default btn-shadow ml-40 hover-up">Entrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+        <div class="mobile-header-wrapper-inner">
+            <div class="mobile-header-top">
+                <div class="user-account">
+                    <img src="{% static 'assets/imgs/avatar/ava_13.png' %}" alt="" />
+                    <div class="content">
+                        <h6 class="user-name">Sofia, <span class="text-brand">Nexxt Job</span></h6>
+                        <p class="font-xs text-muted">2 novas vagas</p>
+                    </div>
+                </div>
+                <div class="burger-icon burger-icon-white">
+                    <span class="burger-icon-top"></span>
+                    <span class="burger-icon-mid"></span>
+                    <span class="burger-icon-bottom"></span>
+                </div>
+            </div>
+            <div class="mobile-header-content-area">
+                <div class="perfect-scroll">
+                    <div class="mobile-search mobile-header-border mb-30">
+                        <form action="#">
+                            <input type="text" placeholder="Buscar nova vaga..." />
+                            <i class="fi-rr-search"></i>
+                        </form>
+                    </div>
+                    <div class="mobile-menu-wrap mobile-header-border">
+                        <!-- mobile menu start -->
+                        <nav>
+                            <ul class="mobile-menu font-heading">
+                                <li class="">
+                                    <a class="active" href="#">Início</a>
+                                </li>
+                                <li class="has-children">
+                                    <a href="#">Páginas</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Página</a></li>
+                                        <li><a href="#">Página</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- mobile menu end -->
+                    </div>
+                    <div class="mobile-social-icon mb-50">
+                        <h6 class="mb-25">Siga nas redes</h6>
+                        <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-instagram.svg' %}" alt="" /></a>
+                        <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-pinterest.svg' %}" alt="" /></a>
+                        <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-youtube.svg' %}" alt="" /></a>
+                    </div>
+                    <div class="site-copyright">Copyright 2024 © Nexxt. <br />Designed by Nexxt</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End header-->

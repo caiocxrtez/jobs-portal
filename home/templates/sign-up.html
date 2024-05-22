@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>New Project - Sign Up</title>
+    <meta name="description" content="" />
+
+    {% include 'includes/css.html' %}
+
+</head>
+
+<body>
+    <!-- Preloader Start -->
+
+    {% include 'includes/header.html' %}
+
+    <!-- Content -->
+    <main class="main">
+        <div class="container mt-90 mt-md-30">
+            <div class="row">
+                <div class="col-xl-10 col-lg-12 m-auto">
+                    <section class="mb-50">
+                        <h5 class="text-blue text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">Sua oportunidade chegou!</h5>
+                        <h3 class="section-title w-75 w-md-100 mb-50 mt-15 text-center mx-auto wow animate__animated animate__fadeInUp" 
+                        data-wow-delay=".1s">
+                        Crie sua conta e fique por dentro de todas as vagas.
+                        </h3>
+                        <div class="row">
+                            <div class="col-xl-9 col-md-12 mx-auto">
+                                <div class="contact-from-area padding-20-row-col">
+                                    <!-- Form here -->
+                                    <form class="contact-form-style mt-80">
+                                        <div class="row wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="input-style mb-20">
+                                                    <input placeholder="Nome de usuário" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="input-style mb-20">
+                                                    <input placeholder="Email..." type="email" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-6">
+                                                <div class="input-style mb-20">
+                                                    <input placeholder="Senha..." type="password" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-6">
+                                                <div class="input-style mb-20">
+                                                    <input placeholder="Repita a senha..." type="password" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 text-center">
+                                                <button class="submit submit-auto-width" type="submit">Criar conta</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- End form -->
+                                    <p class="form-messege"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Content -->
+    <div class="space" style="margin-bottom: 54px;"></div>
+
+    <!-- Footer -->
+
+    {% include 'includes/footer.html' %}
+
+    <!-- Vendor JS-->
+
+    {% include 'includes/js.html' %}
+    
+</body>
+
+</html>
